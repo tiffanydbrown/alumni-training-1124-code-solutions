@@ -1,5 +1,5 @@
+'use strict';
 /* exported getFirstElement */
-
-function getFirstElement(array: any[]): any[] {
+function getFirstElement(array) {
   return array[0];
 }

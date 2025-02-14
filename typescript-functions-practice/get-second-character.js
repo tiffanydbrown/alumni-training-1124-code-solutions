@@ -1,5 +1,5 @@
+'use strict';
 /* exported getSecondCharacter */
-
-function getSecondCharacter(string: string): string {
+function getSecondCharacter(string) {
   return string[1];
 }

@@ -1,5 +1,5 @@
+'use strict';
 /* exported getSumOfSquares */
-
-function getSumOfSquares(x: number, y: number): number {
+function getSumOfSquares(x, y) {
   return x ** 2 + y ** 2;
 }

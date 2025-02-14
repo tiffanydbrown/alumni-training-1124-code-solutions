@@ -1,5 +1,5 @@
+'use strict';
 /* exported getLastElement */
-
-function getLastElement(array: any[]): any {
+function getLastElement(array) {
   return array[array.length - 1];
 }

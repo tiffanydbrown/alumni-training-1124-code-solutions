@@ -1,5 +1,5 @@
+'use strict';
 /* exported getLengthOfArray */
-
-function getLengthOfArray(array: any[]): number {
+function getLengthOfArray(array) {
   return array.length;
 }
