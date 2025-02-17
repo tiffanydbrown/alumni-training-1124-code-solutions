@@ -46,3 +46,30 @@ library.push(js);
 library.unshift(css);
 library.splice(1, 1);
 console.log('Value of library object:', library);
+
+// String Methods
+
+const fullName: string = 'Tiffany Brown';
+const firstAndLastName: string[] = fullName.split(' ');
+console.log('Value of firstAndLastName:', firstAndLastName);
+
+const firstName: string = firstAndLastName[0];
+const sayMyName: string = firstName.toUpperCase();
+console.log('Value of sayMyName:', sayMyName);
+
+// Object Methods
+
+const employee: any = {
+  name: 'Tiffany',
+  age: '99',
+  position: 'manager',
+};
+
+const employeeKeys: string[] = Object.keys(employee);
+console.log('Value of employeeKeys:', employeeKeys);
+
+const employeeValues: string[] = Object.values(employee);
+console.log('Value of employeeValues:', employeeValues);
+
+const employeePairs: any = Object.entries(employee);
+console.log('Value of employeePairs:', employeePairs);
