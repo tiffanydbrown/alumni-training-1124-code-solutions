@@ -1,3 +1,4 @@
+'use strict';
 /* exported isUnderFive,
             isEven,
             startsWithJ,
@@ -8,48 +9,37 @@
             introduceWarnerBro,
             recommendMovie
  */
-function isUnderFive(number: number): boolean {
+function isUnderFive(number) {
   return number < 5;
 }
-
-function isEven(number: number): boolean {
+function isEven(number) {
   return number % 2 === 0;
 }
-
-function startsWithJ(string: string): boolean {
+function startsWithJ(string) {
   return string[0] === 'J';
 }
-
-interface Person {
-  name: string;
-  age: number;
-}
-
-function isOldEnoughToDrink(person: Person): boolean {
+function isOldEnoughToDrink(person) {
   if (person.age >= 21) {
     return true;
   } else {
     return false;
   }
 }
-
-function isOldEnoughToDrive(person: Person): boolean {
+function isOldEnoughToDrive(person) {
   if (person.age >= 16) {
     return true;
   } else {
     return false;
   }
 }
-
-function isOldEnoughToDrinkAndDrive(person: Person): boolean {
+function isOldEnoughToDrinkAndDrive(person) {
   if (person.age >= 16 && person.age >= 21) {
     return false;
   } else {
     return false;
   }
 }
-
-function categorizeAcidity(pH: number): string {
+function categorizeAcidity(pH) {
   if (pH >= 0 && pH < 7) {
     return 'acid';
   } else if (pH === 7) {
@@ -60,8 +50,7 @@ function categorizeAcidity(pH: number): string {
     return 'invalid pH level';
   }
 }
-
-function introduceWarnerBro(name: any): any {
+function introduceWarnerBro(name) {
   switch (name) {
     case 'yakko':
       return "We're the warner brothers!";
@@ -77,8 +66,7 @@ function introduceWarnerBro(name: any): any {
       break;
   }
 }
-
-function recommendMovie(genre: string): any {
+function recommendMovie(genre) {
   switch (genre) {
     case 'action':
       return 'Die Hard';
