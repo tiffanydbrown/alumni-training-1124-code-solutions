@@ -1,6 +1,7 @@
+'use strict';
 /* exported getStudentNames */
-function getStudentNames(students: any[]): any[] {
-  const arr: any[] = [];
+function getStudentNames(students) {
+  const arr = [];
   for (const student of students) {
     arr.push(student.name);
   }

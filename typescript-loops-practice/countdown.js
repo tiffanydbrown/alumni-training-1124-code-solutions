@@ -1,8 +1,7 @@
+'use strict';
 /* exported countdown */
-
-function countdown(num: number): number[] {
-  const arr: number[] = [];
-
+function countdown(num) {
+  const arr = [];
   for (let i = num; i >= 0; i--) {
     arr.push(i);
   }
