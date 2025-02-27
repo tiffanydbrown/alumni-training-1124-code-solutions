@@ -1,4 +1,5 @@
+'use strict';
 /* exported head */
-function head(array: any[]): unknown {
+function head(array) {
   return array[0];
 }
