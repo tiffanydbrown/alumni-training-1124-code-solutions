@@ -1,7 +1,7 @@
+'use strict';
 /* exported getValues */
-function getValues(object: any): any[] {
-  const arr: any[] = [];
-
+function getValues(object) {
+  const arr = [];
   for (const key in object) {
     arr.push(object[key]);
   }
