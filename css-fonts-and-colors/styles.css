@@ -4,10 +4,12 @@
 
 body {
   margin: 0;
+  font-family: Lato, sans-serif;
 }
 
 section {
   padding: 1.5rem 0;
+  background-color: #f2f7f7;
 }
 
 h2 {
@@ -15,6 +17,7 @@ h2 {
   font-size: 2rem;
   text-align: center;
   font-weight: 300;
+  font-family: Boldonse, system-ui;
 }
 
 form {
@@ -34,6 +37,7 @@ input {
   padding: 0.5rem;
   border: 1px solid;
   font-weight: 300;
+  color: lightgray;
 }
 
 button {
@@ -42,4 +46,18 @@ button {
   margin-left: 0.25rem;
   border: none;
   font-weight: 500;
+  background-color: #51e009;
+  color: white;
+}
+
+.lato-bold {
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.boldonse-regular {
+  font-family: Boldonse, system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
