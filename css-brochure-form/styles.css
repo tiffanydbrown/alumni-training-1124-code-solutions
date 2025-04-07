@@ -1,0 +1,13 @@
+h3 {
+  color: #f26892;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.flex-container {
+  display: flex;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+}
