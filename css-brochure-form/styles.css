@@ -1,0 +1,51 @@
+h3 {
+  color: #f26892;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.flex-container {
+  display: flex;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+#email {
+  margin-bottom: 10px;
+  width: 500px;
+  padding: 5px;
+  color: lightgrey;
+}
+
+#name {
+  margin-bottom: 10px;
+  width: 500px;
+  padding: 5px;
+  color: lightgrey;
+}
+
+#hiring {
+  margin-bottom: 10px;
+  width: 500px;
+  padding: 5px;
+  color: lightgrey;
+}
+
+#engineers {
+  width: 500px;
+  background-color: #edebeb;
+  padding: 5px;
+}
+
+.button {
+  background-color: #f26892;
+  color: white;
+  border: 2px solid #f26892;
+  border-radius: 25px;
+  margin-top: 10px;
+  margin-left: 425px;
+  width: 75px;
+  height: 30px;
+}
