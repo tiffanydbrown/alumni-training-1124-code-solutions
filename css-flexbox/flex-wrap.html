@@ -8,24 +8,25 @@
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="pokemon.css" />
     <style>
-      .container {
+      #card-deck {
         display: flex;
         flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
         width: 100%;
-        height: 300px;
+        height: auto;
         padding: 25px;
       }
 
       .card-wrapper {
-        flex-direction: column;
-        flex-basis: 0 0 calc(100% / 6);
+        flex-basis: calc(100% / 6);
         padding: 10px;
         box-sizing: border-box;
       }
     </style>
   </head>
   <body>
-    <div class="container" id="card-deck">
+    <div id="card-deck">
       <div class="card-wrapper">
         <div class="pokemon-card">
           <img src="images/001.png" alt="Bulbasaur" />
