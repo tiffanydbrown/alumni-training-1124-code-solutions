@@ -8,11 +8,19 @@
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="pokemon.css" />
     <style>
-      /* your styles here 👇 */
+      .container {
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+      }
+
+      .pokemon-card {
+        margin: 5px;
+      }
     </style>
   </head>
   <body>
-    <div id="card-deck">
+    <div class="container" id="card-deck">
       <div class="card-wrapper">
         <div class="pokemon-card">
           <img src="images/001.png" alt="Bulbasaur" />
