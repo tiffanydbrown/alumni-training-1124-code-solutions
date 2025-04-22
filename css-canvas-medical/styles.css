@@ -114,13 +114,6 @@
   font-size: small;
 }
 
-.column-full {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-}
-
 .country {
   color: gray;
   text-align: center;
@@ -226,4 +219,24 @@
 
 .logo-white {
   height: 25px;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-start;
+  color: gray;
+  padding: 25px 50px;
+  width: 100vw;
+}
+
+.column-full {
+  width: 100%;
+}
+
+.contact {
+  margin-left: -375px;
+}
+
+.privacy {
+  margin-left: 25px;
 }
