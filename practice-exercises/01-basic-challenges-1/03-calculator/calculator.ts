@@ -3,5 +3,18 @@ export function calculator(
   num2: number,
   operator: string
 ): number {
-  return NaN;
+  let result;
+
+  if (operator === '+') {
+    result = num1 + num2;
+  } else if (operator === '-') {
+    result = num1 - num2;
+  } else if (operator === '*') {
+    result = num1 * num2;
+  } else if (operator === '/') {
+    result = num1 / num2;
+  } else {
+    throw new Error(`Invalid operator: ${operator}`);
+  }
+  return result;
 }
