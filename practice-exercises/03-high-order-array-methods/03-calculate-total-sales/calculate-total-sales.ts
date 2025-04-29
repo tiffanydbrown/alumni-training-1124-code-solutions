@@ -8,5 +8,13 @@ export function calculateTotalSalesWithTax(
   products: Product[],
   taxRate: number
 ): number {
-  return NaN;
+  const totalSales = products.reduce(
+    (sum, product) => sum + product.price * product.quantity,
+    0
+  );
+
+  const tax = (totalSales * taxRate) / 100;
+  const totalSalesWithTax = totalSales + tax;
+
+  return parseFloat(totalSalesWithTax.toFixed(2));
 }
