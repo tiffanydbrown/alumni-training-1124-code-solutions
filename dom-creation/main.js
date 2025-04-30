@@ -1,5 +1,4 @@
 'use strict';
-/* exported pokedex */
 const pokedex = [
   {
     number: '001',
@@ -65,3 +64,32 @@ const pokedex = [
     imageUrl: 'images/blastoise.png',
   },
 ];
+function renderPokemon(pokemon) {
+  const $columnThird = document.createElement('div');
+  $columnThird.className = 'column-third';
+  const $card = document.createElement('div');
+  $card.className = 'pokemon-card';
+  $columnThird.appendChild($card);
+  const $image = document.createElement('img');
+  $image.setAttribute('src', pokemon.imageUrl);
+  $card.appendChild($image);
+  const $cardText = document.createElement('div');
+  $cardText.className = 'pokemon-card-text';
+  $card.appendChild($cardText);
+  const $name = document.createElement('h2');
+  $name.textContent = pokemon.name;
+  $cardText.appendChild($name);
+  const $number = document.createElement('h3');
+  $number.textContent = `#${pokemon.number}`;
+  $cardText.appendChild($number);
+  const $strength = document.createElement('p');
+  $strength.textContent = pokemon.description;
+  $cardText.appendChild($strength);
+  return $columnThird;
+}
+const $row = document.querySelector('.row');
+if (!$row) throw new Error('The $row query failed');
+for (const pokemon of pokedex) {
+  const $pokemonCard = renderPokemon(pokemon);
+  $row.appendChild($pokemonCard);
+}
